@@ -567,9 +567,9 @@ Reg Add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\SmartGlass" /T REG_DWORD
 Write-Host "Disabling Sign-in Information to Finish Setting Up After Updates"
 Reg Add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /T REG_DWORD /V "ARSOUserConsent" /D 2 /F
 
-Write-Host "Set Temp File Location At D:\Temp"
-Set-ItemProperty -path "HKLM:System\CurrentControlSet\Control\Session Manager\Environment" -name TEMP "D:\TEMP" 
-Set-ItemProperty -path "HKLM:System\CurrentControlSet\Control\Session Manager\Environment" -name TMP "D:\TEMP"
+#Write-Host "Set Temp File Location At D:\Temp"
+#Set-ItemProperty -path "HKLM:System\CurrentControlSet\Control\Session Manager\Environment" -name TEMP "D:\TEMP" 
+#Set-ItemProperty -path "HKLM:System\CurrentControlSet\Control\Session Manager\Environment" -name TMP "D:\TEMP"
 
 Write-Host "Clearing Start Tiles"
 $startlayoutstr = @"
