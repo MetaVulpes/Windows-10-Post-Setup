@@ -597,15 +597,15 @@ remove-item $Env:TEMP\startlayout.xml
 # Boxstarter Winconfig Commands #
 #################################
 
-Install-WindowsUpdate
+#Install-WindowsUpdate
 
-Move-LibraryDirectory "Documents" "D:\Documents"
-Move-LibraryDirectory "Downloads" "D:\Downloads"
-Move-LibraryDirectory "Music" "D:\Music"
-Move-LibraryDirectory "Pictures" "D:\Pictures"
-Move-LibraryDirectory "Videos" "D:\Videos"
+#Move-LibraryDirectory "Documents" "D:\Documents"
+#Move-LibraryDirectory "Downloads" "D:\Downloads"
+#Move-LibraryDirectory "Music" "D:\Music"
+#Move-LibraryDirectory "Pictures" "D:\Pictures"
+#ove-LibraryDirectory "Videos" "D:\Videos"
 
-Set-WindowsExplorerOptions -EnableShowFullPathInTitleBar
+#Set-WindowsExplorerOptions -EnableShowFullPathInTitleBar
 
 ####################
 # Software Install #
@@ -672,8 +672,8 @@ choco install -y twitch
 # Update Execution Policy #
 ###########################
 
-Write-Host "Setting Execution Policy to Restricted."
-Update-ExecutionPolicy Restricted
+#Write-Host "Setting Execution Policy to Restricted."
+#Update-ExecutionPolicy Restricted
 
 #################
 # End of Script #
