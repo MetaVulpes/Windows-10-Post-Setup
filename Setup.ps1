@@ -30,8 +30,8 @@ If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 # Set Execution Policy #
 ########################
 
-Write-Host "Setting Execution Policy to Unrestricted."
-Set-ExecutionPolicy Unrestricted
+#Write-Host "Setting Execution Policy to Unrestricted."
+#Set-ExecutionPolicy Unrestricted
 
 #######################
 # Windows 10 Settings #
