@@ -9,8 +9,8 @@
 Write-Host "Installing Chocolatey"
 Invoke-WebRequest https://chocolatey.org/install.ps1 -UseBasicParsing | Invoke-Expression
 
-Write-Host "Installing Boxstarter"
-choco install -y boxstarter
+#Write-Host "Installing Boxstarter"
+#choco install -y boxstarter
 
 ### Launch with Boxstarter Web Launcher URL; RECOMMENDED TO USE REBOOT URL ###
 
